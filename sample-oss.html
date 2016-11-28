@@ -1,0 +1,76 @@
+<!doctype>
+<html>
+<head lang="ja">
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-size: 150%;
+    }
+
+    .font-hiragino {
+      font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN";
+    }
+
+    .font-yugothic {
+      font-family: 游ゴシック, "Yu Gothic", YuGothic;
+    }
+
+    .font-notosans {
+      font-family: "Noto Sans Japanese", "Noto Sans CJK JP";
+    }
+
+    .font-kerning-and-trad {
+      /* プロポーショナルメトリクスを有効、旧字体指定 */
+      font-feature-settings: "palt" 1, "trad" 1;
+    }
+
+    h1 {
+      margin: 0.5rem 0;
+      color: #888;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      color: #666;
+    }
+
+    label {
+      background: #eee;
+      border-radius: 3px;
+      font-weight: bold;
+      color: #666;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+    }
+
+    div.item {
+      margin: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+<div class="item font-hiragino">
+  <label>ヒラギノ角ゴシック</label>
+  <h1>会社で台湾に社員旅行</h1>
+  <p>亜細亜の旅行を皆さん楽しみにしています。</p>
+</div>
+<div class="item font-yugothic">
+  <label>游ゴシック</label>
+  <h1>会社で台湾に社員旅行</h1>
+  <p>亜細亜の旅行を皆さん楽しみにしています。</p>
+</div>
+
+<div class="item font-hiragino font-kerning-and-trad">
+  <label>ヒラギノ角ゴシック (プロポーショナルメトリクス＆旧字体)</label>
+  <h1>会社で台湾に社員旅行</h1>
+  <p>亜細亜の旅行を皆さん楽しみにしています。</p>
+</div>
+<div class="item font-yugothic font-kerning-and-trad">
+  <label>游ゴシック (プロポーショナルメトリクス＆旧字体)</label>
+  <h1>会社で台湾に社員旅行</h1>
+  <p>亜細亜の旅行を皆さん楽しみにしています。</p>
+</div>
+</body>
+
+</html>
