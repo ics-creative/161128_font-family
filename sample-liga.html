@@ -13,15 +13,19 @@
       font-weight: 400;
       line-height:1.2;
     }
+    .font-YuGothic {
+      font-family: 游ゴシック, "Yu Gothic", YuGothic;
+    }
 
     .font-swash {
-      font-feature-settings: "swsh";
-
+      /* スワッシュを有効にする */
+      font-feature-settings: "swsh" 1;
     }
 
     .font-liga {
+      /* 任意の合字を有効にする */
       font-variant-ligatures: common-ligatures;
-      font-feature-settings: "dlig";
+      font-feature-settings: "dlig" 1;
     }
 
     h1 {
@@ -70,16 +74,17 @@
     inexpensively. I will build a great, great wall on our southern border, and I will make Mexico pay for that wall.
     Mark my words.</p>
 </div>
-<div class="item ">
+<div class="item font-YuGothic">
   <label>任意の合字 無し</label>
   <h1>マイクロアプリ株式会社</h1>
   <p>いけだサンチームからトンコツボーイが登壇します。</p>
 </div>
-<div class="item font-liga">
+<div class="item font-YuGothic font-liga">
   <label>任意の合字 有り</label>
   <h1>マイクロアプリ株式会社</h1>
   <p>いけだサンチームからトンコツボーイが登壇します。</p>
 </div>
+<p>任意の合字はChromeやFirefoxで有効。また、フォントが対応している必要があります。</p>
 
 </body>
 
