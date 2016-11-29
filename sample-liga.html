@@ -1,0 +1,86 @@
+<!doctype>
+<html>
+<head lang="ja">
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-size: 150%;
+    }
+
+    .font-handwrite {
+      font-family: bickham-script-pro-3, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      line-height:1.2;
+    }
+
+    .font-swash {
+      font-feature-settings: "swsh";
+
+    }
+
+    .font-liga {
+      font-variant-ligatures: common-ligatures;
+      font-feature-settings: "dlig";
+    }
+
+    h1 {
+      margin: 0.5rem 0;
+      color: #888;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      color: #666;
+    }
+
+    label {
+      background: #eee;
+      border-radius: 3px;
+      font-weight: bold;
+      color: #666;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+    }
+
+    div.item {
+      margin: 2rem;
+    }
+  </style>
+
+  <script src="https://use.typekit.net/byn3oem.js"></script>
+  <script>try {
+    Typekit.load({async: true});
+  } catch (e) {
+  }</script>
+</head>
+
+<body>
+<div class="item font-handwrite ">
+  <label>スワッシュ 無し</label>
+  <h1>My name is Donald Trump.</h1>
+  <p>I will build a great wall and nobody builds walls better than me, believe me – and I’ll build them very
+    inexpensively. I will build a great, great wall on our southern border, and I will make Mexico pay for that wall.
+    Mark my words.</p>
+</div>
+<div class="item font-handwrite font-swash">
+  <label>スワッシュ 有り</label>
+  <h1>My name is Donald Trump.</h1>
+  <p>I will build a great wall and nobody builds walls better than me, believe me – and I’ll build them very
+    inexpensively. I will build a great, great wall on our southern border, and I will make Mexico pay for that wall.
+    Mark my words.</p>
+</div>
+<div class="item ">
+  <label>任意の合字 無し</label>
+  <h1>マイクロアプリ株式会社</h1>
+  <p>いけだサンチームからトンコツボーイが登壇します。</p>
+</div>
+<div class="item font-liga">
+  <label>任意の合字 有り</label>
+  <h1>マイクロアプリ株式会社</h1>
+  <p>いけだサンチームからトンコツボーイが登壇します。</p>
+</div>
+
+</body>
+
+</html>
