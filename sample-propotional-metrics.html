@@ -20,12 +20,22 @@
       font-family: "Noto Sans Japanese", "Noto Sans CJK JP";
     }
 
-    .font-kerning {
+    .font-palt {
       /* プロポーショナルメトリクスを有効にする */
       font-feature-settings: "palt" 1;
     }
 
+    .font-pwid {
+      /* プロポーショナル字形を使用する */
+      font-feature-settings: "pwid" 1;
+    }
+
     h1 {
+      font-size: 0.8rem;
+      color: #888;
+      border-bottom: 1px solid #888888;
+    }
+    h2 {
       margin: 0.5rem 0;
       color: #888;
     }
@@ -51,36 +61,60 @@
 </head>
 
 <body>
+<h1>未指定</h1>
+
 <div class="item font-hiragino">
   <label>ヒラギノ角ゴシック</label>
-  <h1>フォントの字間について</h1>
+  <h2>フォントの字間について</h2>
   <p>アメンボ赤いなアイウエオ。浮藻に小エビも泳いでる。</p>
 </div>
 <div class="item font-yugothic">
   <label>游ゴシック</label>
-  <h1>フォントの字間について</h1>
+  <h2>フォントの字間について</h2>
   <p>アメンボ赤いなアイウエオ。浮藻に小エビも泳いでる。</p>
 </div>
 <div class="item font-notosans">
   <label>Noto Sans Japanese</label>
-  <h1>フォントの字間について</h1>
+  <h2>フォントの字間について</h2>
   <p>アメンボ赤いなアイウエオ。浮藻に小エビも泳いでる。</p>
 </div>
-<div class="item font-hiragino font-kerning">
+
+<h1>paltを指定</h1>
+
+<div class="item font-hiragino font-palt">
   <label>ヒラギノ角ゴシック (プロポーショナルメトリクス)</label>
-  <h1>フォントの字間について</h1>
+  <h2>フォントの字間について</h2>
   <p>アメンボ赤いなアイウエオ。浮藻に小エビも泳いでる。</p>
 </div>
-<div class="item font-yugothic font-kerning">
+<div class="item font-yugothic font-palt">
   <label>游ゴシック (プロポーショナルメトリクス)</label>
-  <h1>フォントの字間について</h1>
+  <h2>フォントの字間について</h2>
   <p>アメンボ赤いなアイウエオ。浮藻に小エビも泳いでる。</p>
 </div>
-<div class="item font-notosans font-kerning">
+<div class="item font-notosans font-palt">
   <label>Noto Sans Japanese (プロポーショナルメトリクス)</label>
-  <h1>フォントの字間について</h1>
+  <h2>フォントの字間について</h2>
   <p>アメンボ赤いなアイウエオ。浮藻に小エビも泳いでる。</p>
 </div>
+
+<h1>pwidを指定</h1>
+
+<div class="item font-hiragino font-pwid">
+  <label>ヒラギノ角ゴシック (プロポーショナル字形)</label>
+  <h2>フォントの字間について</h2>
+  <p>アメンボ赤いなアイウエオ。浮藻に小エビも泳いでる。</p>
+</div>
+<div class="item font-yugothic font-pwid">
+  <label>游ゴシック (プロポーショナル字形)</label>
+  <h2>フォントの字間について</h2>
+  <p>アメンボ赤いなアイウエオ。浮藻に小エビも泳いでる。</p>
+</div>
+<div class="item font-notosans font-pwid">
+  <label>Noto Sans Japanese (プロポーショナル字形)</label>
+  <h2>フォントの字間について</h2>
+  <p>アメンボ赤いなアイウエオ。浮藻に小エビも泳いでる。</p>
+</div>
+
 
 
 </body>
