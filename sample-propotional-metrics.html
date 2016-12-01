@@ -4,20 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
+
+    @font-face {
+      font-family: "Blank";
+      src: url(fonts/AdobeBlank.otf.woff) format("woff");
+    }
+
     body {
       font-size: 150%;
     }
 
     .font-hiragino {
-      font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN";
+      font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", Blank;
     }
 
     .font-yugothic {
-      font-family: 游ゴシック, "Yu Gothic", YuGothic;
+      font-family: 游ゴシック, "Yu Gothic", YuGothic, Blank;
     }
 
     .font-notosans {
-      font-family: "Noto Sans Japanese", "Noto Sans CJK JP";
+      font-family: "Noto Sans Japanese", "Noto Sans CJK JP", Blank;
     }
 
     .font-palt {
@@ -115,7 +121,7 @@
   <p>アメンボ赤いなアイウエオ。浮藻に小エビも泳いでる。</p>
 </div>
 
-
+<p>※デバイスに該当のフォントが入っていない場合は、文字は表示されないようにしています。</p>
 
 </body>
 
